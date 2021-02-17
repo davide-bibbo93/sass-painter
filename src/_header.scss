@@ -1,6 +1,6 @@
 // Header
 header {
-  background-color: $header-bg-color;
+  background-color: $bg-black-color;
   color: $text-white-color;
 
   nav {
@@ -10,8 +10,8 @@ header {
 
   .first-nav-bar {
     justify-content: flex-end;
-    font-size: $header-text-size;
-    color: grey;
+    font-size: 13px;
+    color: $text-grey-color;
 
     i {
       font-size: 15px;
@@ -31,16 +31,17 @@ header {
 
     > * {
       margin-right: 20px;
-      padding: $header-padding;
+      padding: 10px 0;
     }
 
   }
 
   .second-nav-bar {
-    font-size: $header-text-size;
+    font-size: 13px;
     cursor: pointer;
 
     img {
+      margin-right: 15px;
       width: 90px;
     }
 
@@ -49,8 +50,16 @@ header {
     }
 
     > * {
-      margin-right: 35px;
-      padding: $header-padding;
+      padding: 10px 0;
+    }
+
+    div {
+      padding: 14px 28px;
+
+      &:hover{
+        color: $text-black-color;
+        background-color: $nav-hover-color;
+      }
     }
 
   }

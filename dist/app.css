@@ -33,14 +33,21 @@ header .second-nav-bar {
   cursor: pointer;
 }
 header .second-nav-bar img {
+  margin-right: 15px;
   width: 90px;
 }
 header .second-nav-bar i {
   color: grey;
 }
 header .second-nav-bar > * {
-  margin-right: 35px;
   padding: 10px 0;
+}
+header .second-nav-bar div {
+  padding: 14px 28px;
+}
+header .second-nav-bar div:hover {
+  color: #000;
+  background-color: #eee;
 }
 
 * {
