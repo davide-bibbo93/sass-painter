@@ -1,0 +1,57 @@
+// Header
+header {
+  background-color: $header-bg-color;
+  color: $text-white-color;
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .first-nav-bar {
+    justify-content: flex-end;
+    font-size: 13px;
+    color: grey;
+
+    i {
+      font-size: 15px;
+      color: #28acff;
+    }
+
+    a {
+      color: $text-grey-color;
+      text-decoration: none;
+      padding-left: 10px;
+
+      &:hover {
+        color: $text-white-color;
+        text-decoration: underline;
+      }
+    }
+
+    > * {
+      margin-right: 20px;
+      padding: $header-padding;
+    }
+
+  }
+
+  .second-nav-bar {
+    font-size: $header-text-size;
+
+    img {
+      width: 90px;
+    }
+
+    i {
+      color: $text-grey-color;
+    }
+
+    > * {
+      margin-right: 35px;
+      padding: $header-padding;
+    }
+
+  }
+
+}
