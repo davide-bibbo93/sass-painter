@@ -1,5 +1,7 @@
 // Var general
 $jumbo-bg-image: "../img/hero-pe-8.jpg";
+$first-section-bg-title: "../img/intro-top.jpg";
+$first-section-bg-image: "../img/flow-icons-bg.png";
 $size-sub-text: 13px;
 $size-title: 28px;
 $size-sub-title: 20px;
@@ -15,4 +17,14 @@ $size-sub-title: 20px;
   &:hover {
     background-color: $bg-buy-hover-color;
   }
+}
+
+@mixin main-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+@mixin box-title {
+  font-size: 40px;
+  font-weight: 500;
 }

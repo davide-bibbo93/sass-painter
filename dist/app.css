@@ -147,6 +147,42 @@ main nav div:hover {
   cursor: pointer;
   background-color: #e6e6e6;
 }
+main .first-section-title {
+  height: 200px;
+  background-image: url("../img/intro-top.jpg");
+  padding-top: 80px;
+  text-align: center;
+}
+main .first-section-title .main-title {
+  margin-bottom: 20px;
+}
+main .first-section-content {
+  overflow-x: hidden;
+}
+main .first-section-content img {
+  position: relative;
+  right: 150px;
+}
+main .first-section-content .container {
+  display: flex;
+  background-image: url("../img/flow-icons-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main .first-section-content .container .box {
+  text-align: center;
+  margin: 50px 0;
+}
+main .first-section-content .container .box > div {
+  padding: 5px 50px;
+}
+main .first-section-content .container img {
+  width: 200px;
+  margin: 15px 0;
+  position: relative;
+  left: 5px;
+  top: -15px;
+}
 
 .sub-text {
   font-size: 13px;
@@ -158,4 +194,14 @@ main nav div:hover {
 
 .sub-title {
   font-size: 20px;
+}
+
+.main-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.box-title {
+  font-size: 40px;
+  font-weight: 500;
 }

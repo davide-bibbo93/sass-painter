@@ -90,6 +90,53 @@ main{
       }
     }
   }
+
+  .first-section {
+
+    &-title {
+      height: 200px;
+      background-image: url($first-section-bg-title);
+      padding-top: 80px;
+      text-align: center;
+
+      .main-title {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-content {
+      overflow-x: hidden;
+
+      img {
+        position: relative;
+        right: 150px;
+      }
+
+      .container {
+        display: flex;
+        background-image: url($first-section-bg-image);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .box{
+          text-align: center;
+          margin: 50px 0;
+
+          > div {
+            padding: 5px 50px;
+          }
+        }
+
+        img{
+          width: 200px;
+          margin: 15px 0;
+          position: relative;
+          left: 5px;
+          top: -15px;
+        }
+      }
+    }
+  }
 }
 
 .sub-text {
@@ -102,4 +149,12 @@ main{
 
 .sub-title {
   font-size: $size-sub-title;
+}
+
+.main-title {
+  @include main-title;
+}
+
+.box-title {
+  @include box-title ;
 }
