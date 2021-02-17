@@ -18,7 +18,7 @@ header .first-nav-bar i {
 header .first-nav-bar a {
   color: grey;
   text-decoration: none;
-  padding-left: 10px;
+  margin-left: 5px;
 }
 header .first-nav-bar a:hover {
   color: #fff;
@@ -30,6 +30,7 @@ header .first-nav-bar > * {
 }
 header .second-nav-bar {
   font-size: 13px;
+  cursor: pointer;
 }
 header .second-nav-bar img {
   width: 90px;
