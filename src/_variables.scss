@@ -1,1 +1,18 @@
-$jumbo-bg-image: "img/hero-pe-8.jpg";
+// Var general
+$jumbo-bg-image: "../img/hero-pe-8.jpg";
+$size-sub-text: 13px;
+$size-title: 28px;
+$size-sub-title: 20px;
+
+@mixin buy-now {
+  background-color: $bg-buy-color;
+  color: $text-white-color;
+  padding: 10px 40px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-buy-hover-color;
+  }
+}

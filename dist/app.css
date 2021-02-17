@@ -1,3 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-color: #000;
   color: #fff;
@@ -9,14 +24,14 @@ header nav {
 header .first-nav-bar {
   justify-content: flex-end;
   font-size: 13px;
-  color: grey;
+  color: #b3b3b3;
 }
 header .first-nav-bar i {
   font-size: 15px;
   color: #28acff;
 }
 header .first-nav-bar a {
-  color: grey;
+  color: #b3b3b3;
   text-decoration: none;
   margin-left: 5px;
 }
@@ -33,38 +48,114 @@ header .second-nav-bar {
   cursor: pointer;
 }
 header .second-nav-bar img {
-  margin-right: 15px;
+  margin: 0 15px 10px 0;
   width: 90px;
 }
 header .second-nav-bar i {
-  color: grey;
+  color: #b3b3b3;
 }
 header .second-nav-bar > * {
   padding: 10px 0;
 }
 header .second-nav-bar div {
-  padding: 14px 28px;
+  padding: 18px 28px;
 }
 header .second-nav-bar div:hover {
   color: #000;
   background-color: #eee;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 main .jumbo {
+  background-image: url("../img/hero-pe-8.jpg");
+  background-position: left -150px top;
   height: 460px;
+}
+main .jumbo-container {
+  display: flex;
+  justify-content: flex-end;
+}
+main .jumbo-container .jumbo-text {
+  width: 500px;
+  margin-top: 50px;
+}
+main .jumbo-container .jumbo-text > * {
+  margin: 10px 0;
+}
+main .jumbo-container .jumbo-text span {
+  margin-right: 2px;
+  font-style: italic;
+  color: #bb53bd;
+}
+main .jumbo-container .jumbo-text ul {
+  list-style: none;
+}
+main .jumbo-container .jumbo-text li {
+  padding: 5px 0;
+}
+main .jumbo-container .jumbo-text li i {
+  color: #b3b3b3;
+  margin-right: 5px;
+}
+main .jumbo-container .jumbo-text .download-butt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  border: 2px solid black;
+  padding: 10px 15px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+main .jumbo-container .jumbo-text .download-butt i {
+  font-size: 30px;
+}
+main .jumbo-container .buy {
+  width: 400px;
+  height: 440px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #000;
+}
+main .jumbo-container .buy-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+main .jumbo-container .buy button {
+  background-color: #009cff;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+main .jumbo-container .buy button:hover {
+  background-color: #28acff;
+}
+main nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+main nav div {
+  padding: 18px 28px;
+}
+main nav div:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+.sub-text {
+  font-size: 13px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.sub-title {
+  font-size: 20px;
 }

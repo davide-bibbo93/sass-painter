@@ -1,6 +1,105 @@
+// Main
 main{
+
   .jumbo {
-    height: 460px;
     background-image: url($jumbo-bg-image);
+    background-position: left -150px top;
+    height: 460px;
+
+    &-container {
+      display: flex;
+      justify-content: flex-end;
+
+      .jumbo-text {
+        width: 500px;
+        margin-top: 50px;
+
+        > * {
+          margin: 10px 0;
+        }
+
+        span {
+          margin-right: 2px;
+          font-style: italic;
+          color: #bb53bd;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        li {
+          padding: 5px 0;
+
+          i {
+            color: $text-grey-color;
+            margin-right: 5px;
+          }
+        }
+
+        .download-butt {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 250px;
+          border: 2px solid black;
+          padding: 10px 15px;
+          margin-top: 25px;
+          cursor: pointer;
+
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .buy {
+        width: 400px;
+        height: 440px;
+        margin-top: 20px;
+        padding: 15px;
+        background-color: $bg-black-color;
+
+        &-text {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $text-white-color;
+        }
+
+        button {
+          @include buy-now;
+          margin-top: 10px;
+        }
+      }
+    }
   }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-nav-color;
+
+    div {
+      padding: 18px 28px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #e6e6e6;
+      }
+    }
+  }
+}
+
+.sub-text {
+  font-size: $size-sub-text;
+}
+
+.title {
+  font-size: $size-title;
+}
+
+.sub-title {
+  font-size: $size-sub-title;
 }
